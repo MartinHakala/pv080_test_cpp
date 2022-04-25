@@ -54,7 +54,7 @@ jobs:
     # If this step fails, then you should remove it and run the build manually (see below)
     #- name: Autobuild
     #  uses: github/codeql-action/autobuild@v2
-    - if: matrix-language == 'java'
+    - if: matrix.language == 'java'
       name: build java
       run:
         javac buggyj.java
