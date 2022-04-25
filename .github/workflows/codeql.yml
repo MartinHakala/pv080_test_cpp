@@ -56,7 +56,7 @@ jobs:
     #  uses: github/codeql-action/autobuild@v2
     - if: matrix.language == 'java'
       name: build java
-      run:
+      run: |
         javac buggyj.java
 
     # ℹ️ Command-line programs to run using the OS shell.
