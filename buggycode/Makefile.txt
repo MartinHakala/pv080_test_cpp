@@ -1,0 +1,2 @@
+main:
+	g++ buggycode/fail.cpp
